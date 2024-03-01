@@ -60,6 +60,22 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7T-59-IBD">
+                                <rect key="frame" x="16.000000000000004" y="314" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="Zgc-KD-WsP" eventType="touchUpInside" id="zmE-YM-68u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lQ-Zp-NHP">
+                                <rect key="frame" x="321.66666666666669" y="314" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶"/>
+                                <connections>
+                                    <action selector="didTapForwardButton:" destination="Zgc-KD-WsP" eventType="touchUpInside" id="ja5-yh-Xwa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rCk-hU-2t4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,8 +84,12 @@
                             <constraint firstItem="ChQ-GL-sW8" firstAttribute="centerX" secondItem="XhX-jQ-XTs" secondAttribute="centerX" id="A9G-U8-TRT"/>
                             <constraint firstItem="bjb-TL-Spb" firstAttribute="centerX" secondItem="XhX-jQ-XTs" secondAttribute="centerX" id="FGg-Tn-dg3"/>
                             <constraint firstItem="ChQ-GL-sW8" firstAttribute="top" secondItem="bjb-TL-Spb" secondAttribute="bottom" constant="75" id="TM2-QP-1l1"/>
+                            <constraint firstItem="rCk-hU-2t4" firstAttribute="trailing" secondItem="5lQ-Zp-NHP" secondAttribute="trailing" constant="16" id="UgE-Ll-Ycz"/>
+                            <constraint firstItem="Y7T-59-IBD" firstAttribute="centerY" secondItem="XhX-jQ-XTs" secondAttribute="centerY" constant="-75" id="Usz-Qt-Bnb"/>
                             <constraint firstItem="bjb-TL-Spb" firstAttribute="leading" secondItem="c58-MW-2M3" secondAttribute="trailing" constant="2" id="XCr-uW-tc5"/>
+                            <constraint firstItem="5lQ-Zp-NHP" firstAttribute="centerY" secondItem="XhX-jQ-XTs" secondAttribute="centerY" constant="-75" id="dkS-eP-cDl"/>
                             <constraint firstItem="bjb-TL-Spb" firstAttribute="top" secondItem="rCk-hU-2t4" secondAttribute="top" constant="20" id="kPU-L0-d6g"/>
+                            <constraint firstItem="Y7T-59-IBD" firstAttribute="leading" secondItem="rCk-hU-2t4" secondAttribute="leading" constant="16" id="l41-qI-0hW"/>
                         </constraints>
                     </view>
                     <connections>
