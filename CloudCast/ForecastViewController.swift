@@ -16,6 +16,18 @@ class ForecastViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let fakeData = WeatherForecast(weatherCode: .partlyCloudy, temperature: 25.0, date: Date())
+        configure(with: fakeData)
+    }
+    
+    private func configure(with forecast: WeatherForecast) {
+        forecastImageView.image = forecast.weatherCode.image
+        descriptionLabel.text = forecast.weatherCode.description
+        temperatureLabel.text = "\(forecast.temperature)°F"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM d, yyyy"
+        dateLabel.text = dateFormatter.string(from: forecast.date)
     }
 
 }
