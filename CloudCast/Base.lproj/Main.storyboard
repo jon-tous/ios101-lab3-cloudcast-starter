@@ -72,6 +72,13 @@
                             <constraint firstItem="bjb-TL-Spb" firstAttribute="top" secondItem="rCk-hU-2t4" secondAttribute="top" constant="20" id="kPU-L0-d6g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="og3-5n-CKW" id="OFr-O9-ENb"/>
+                        <outlet property="descriptionLabel" destination="sVt-qK-aua" id="xUf-Sb-dxs"/>
+                        <outlet property="forecastImageView" destination="15e-3I-uSz" id="N6g-lW-eNJ"/>
+                        <outlet property="locationLabel" destination="bjb-TL-Spb" id="c0p-ZH-QrD"/>
+                        <outlet property="temperatureLabel" destination="3Pf-Wi-yO8" id="JKN-5v-ic3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhY-YC-PCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
