@@ -12,7 +12,7 @@
         <!--ForecastViewController-->
         <scene sceneID="4Jc-Is-O5s">
             <objects>
-                <viewController title="ForecastViewController" id="duI-h8-kcX" sceneMemberID="viewController">
+                <viewController title="ForecastViewController" id="duI-h8-kcX" customClass="ForecastViewController" customModule="CloudCast" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iXE-Re-QSP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,6 +72,13 @@
                             <constraint firstItem="PfM-vE-wGb" firstAttribute="centerX" secondItem="iXE-Re-QSP" secondAttribute="centerX" id="TtL-fj-Jcz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="GdA-E9-j2E" id="hCI-bo-PNM"/>
+                        <outlet property="descriptionLabel" destination="5sc-gg-cNf" id="EZO-ze-jGc"/>
+                        <outlet property="forecastImageView" destination="V5U-xF-KOW" id="nrc-i3-ihV"/>
+                        <outlet property="locationLabel" destination="PfM-vE-wGb" id="uP8-wQ-If6"/>
+                        <outlet property="temperatureLabel" destination="FyG-n4-t6d" id="qX6-fx-fln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwl-EY-WNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
