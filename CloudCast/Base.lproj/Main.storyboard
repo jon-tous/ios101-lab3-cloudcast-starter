@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redwood City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfM-vE-wGb">
-                                <rect key="frame" x="118.66666666666669" y="79" width="156" height="27.666666666666671"/>
+                                <rect key="frame" x="118.66666666666669" y="79" width="156" height="28.666666666666671"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,12 +30,44 @@
                                     <constraint firstAttribute="height" constant="30" id="ZHk-xg-Lrk"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="X8N-fW-CzN">
+                                <rect key="frame" x="109" y="182.66666666666663" width="175" height="377"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar 3, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdA-E9-j2E">
+                                        <rect key="frame" x="41.33333333333335" y="0.0" width="92.666666666666686" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="V5U-xF-KOW">
+                                        <rect key="frame" x="0.0" y="67.333333333333343" width="175" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="175" id="4dL-zW-d5T"/>
+                                            <constraint firstAttribute="width" constant="175" id="GHo-9a-mEg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sc-gg-cNf">
+                                        <rect key="frame" x="60.666666666666657" y="289.33333333333337" width="53.666666666666657" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30℉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyG-n4-t6d">
+                                        <rect key="frame" x="68.666666666666657" y="356.66666666666674" width="37.666666666666657" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FeF-kO-fle"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PfM-vE-wGb" firstAttribute="top" secondItem="FeF-kO-fle" secondAttribute="top" constant="20" id="6zB-2n-f7P"/>
                             <constraint firstItem="oaM-ZI-xXd" firstAttribute="top" secondItem="FeF-kO-fle" secondAttribute="top" constant="20" id="7A0-dl-bJS"/>
+                            <constraint firstItem="X8N-fW-CzN" firstAttribute="centerX" secondItem="iXE-Re-QSP" secondAttribute="centerX" id="AUQ-Ow-Ibs"/>
+                            <constraint firstItem="X8N-fW-CzN" firstAttribute="top" secondItem="PfM-vE-wGb" secondAttribute="bottom" constant="75" id="JTR-Lh-lyc"/>
                             <constraint firstItem="PfM-vE-wGb" firstAttribute="leading" secondItem="oaM-ZI-xXd" secondAttribute="trailing" constant="2" id="Jcb-Ox-qc1"/>
                             <constraint firstItem="PfM-vE-wGb" firstAttribute="centerX" secondItem="iXE-Re-QSP" secondAttribute="centerX" id="TtL-fj-Jcz"/>
                         </constraints>
@@ -47,6 +79,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cloud" width="91" height="91"/>
         <image name="place-marker" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
