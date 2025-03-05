@@ -60,6 +60,22 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doo-EZ-UfX">
+                                <rect key="frame" x="16.000000000000004" y="334" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="duI-h8-kcX" eventType="touchUpInside" id="tHG-xk-tH2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mv-uB-bk8">
+                                <rect key="frame" x="339.66666666666669" y="334" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶"/>
+                                <connections>
+                                    <action selector="didTapForwardButton:" destination="duI-h8-kcX" eventType="touchUpInside" id="fj4-7F-y66"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FeF-kO-fle"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -69,7 +85,11 @@
                             <constraint firstItem="X8N-fW-CzN" firstAttribute="centerX" secondItem="iXE-Re-QSP" secondAttribute="centerX" id="AUQ-Ow-Ibs"/>
                             <constraint firstItem="X8N-fW-CzN" firstAttribute="top" secondItem="PfM-vE-wGb" secondAttribute="bottom" constant="75" id="JTR-Lh-lyc"/>
                             <constraint firstItem="PfM-vE-wGb" firstAttribute="leading" secondItem="oaM-ZI-xXd" secondAttribute="trailing" constant="2" id="Jcb-Ox-qc1"/>
+                            <constraint firstItem="doo-EZ-UfX" firstAttribute="centerY" secondItem="iXE-Re-QSP" secondAttribute="centerY" constant="-75" id="LUJ-7k-Cxn"/>
                             <constraint firstItem="PfM-vE-wGb" firstAttribute="centerX" secondItem="iXE-Re-QSP" secondAttribute="centerX" id="TtL-fj-Jcz"/>
+                            <constraint firstItem="FeF-kO-fle" firstAttribute="trailing" secondItem="0Mv-uB-bk8" secondAttribute="trailing" constant="16" id="fIf-As-lCr"/>
+                            <constraint firstItem="0Mv-uB-bk8" firstAttribute="centerY" secondItem="iXE-Re-QSP" secondAttribute="centerY" constant="-75" id="gAC-kp-eWc"/>
+                            <constraint firstItem="doo-EZ-UfX" firstAttribute="leading" secondItem="FeF-kO-fle" secondAttribute="leading" constant="16" id="mT5-4e-2IY"/>
                         </constraints>
                     </view>
                     <connections>
