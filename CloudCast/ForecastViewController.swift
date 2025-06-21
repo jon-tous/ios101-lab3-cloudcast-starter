@@ -18,12 +18,38 @@ class ForecastViewController: UIViewController {
     
     @IBOutlet weak var temperatureLabel: UILabel!
     
+    @IBAction func didTapBackButton(_ sender: UIButton) {
+        selectedForecastIndex = max(0, selectedForecastIndex - 1)
+        configure(with: forecasts[selectedForecastIndex])
+    }
+    
+    @IBAction func didTapForwardButton(_ sender: UIButton) {
+        selectedForecastIndex = min(forecasts.count - 1, selectedForecastIndex + 1)
+        configure(with: forecasts[selectedForecastIndex])
+    }
+    
+    private var forecasts = [WeatherForecast]()
+    private var selectedForecastIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let fakeData = WeatherForecast(temperature: 25.0, date: Date(), weatherCode: .partlyCloudy)
-        configure(with: fakeData)
+        forecasts = createMockData()
+        configure(with: forecasts[selectedForecastIndex])
 
+    }
+    
+    private func createMockData() -> [WeatherForecast] {
+        let today = Date()
+        var dateComponents = DateComponents()
+        dateComponents.day = 1
+        let tomorrow = Calendar.current.date(byAdding: dateComponents, to: today)!
+        let dayAfterTomorrow = Calendar.current.date(byAdding: dateComponents, to: tomorrow)!
+        
+        let mockData1 = WeatherForecast(temperature: 59.5, date: today, weatherCode: .violentRainShowers)
+        let mockData2 = WeatherForecast(temperature: 65.5, date: tomorrow, weatherCode: .fog)
+        let mockData3 = WeatherForecast(temperature: 49.5, date: dayAfterTomorrow, weatherCode: .partlyCloudy)
+        return [mockData1, mockData2, mockData3]
     }
     
     private func configure(with forecast: WeatherForecast) {

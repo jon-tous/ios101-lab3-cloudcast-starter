@@ -60,6 +60,22 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRM-ML-JLJ">
+                                <rect key="frame" x="16.000000000000004" y="334" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="LLX-Zm-Tvw" eventType="touchUpInside" id="Mqp-FJ-XvW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nm-zR-665">
+                                <rect key="frame" x="339.66666666666669" y="334" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶"/>
+                                <connections>
+                                    <action selector="didTapForwardButton:" destination="LLX-Zm-Tvw" eventType="touchUpInside" id="FAF-y4-27c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S19-aE-BnP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,8 +84,12 @@
                             <constraint firstItem="11L-Zt-EbV" firstAttribute="centerX" secondItem="358-9b-PGm" secondAttribute="centerX" id="DvU-DA-HJg"/>
                             <constraint firstItem="Bll-Lx-Npg" firstAttribute="top" secondItem="S19-aE-BnP" secondAttribute="top" constant="20" id="Jdg-g9-nss"/>
                             <constraint firstItem="IeJ-uh-UuQ" firstAttribute="top" secondItem="S19-aE-BnP" secondAttribute="top" constant="20" id="R8q-Oi-J4E"/>
+                            <constraint firstItem="S19-aE-BnP" firstAttribute="trailing" secondItem="4Nm-zR-665" secondAttribute="trailing" constant="16" id="RFN-Bt-5Md"/>
                             <constraint firstItem="Bll-Lx-Npg" firstAttribute="centerX" secondItem="358-9b-PGm" secondAttribute="centerX" id="UpQ-Gc-yYL"/>
+                            <constraint firstItem="4Nm-zR-665" firstAttribute="centerY" secondItem="358-9b-PGm" secondAttribute="centerY" constant="-75" id="i19-CE-QXl"/>
+                            <constraint firstItem="sRM-ML-JLJ" firstAttribute="leading" secondItem="S19-aE-BnP" secondAttribute="leading" constant="16" id="l55-8p-My8"/>
                             <constraint firstItem="Bll-Lx-Npg" firstAttribute="leading" secondItem="IeJ-uh-UuQ" secondAttribute="trailing" constant="2" id="wce-cO-sdD"/>
+                            <constraint firstItem="sRM-ML-JLJ" firstAttribute="centerY" secondItem="358-9b-PGm" secondAttribute="centerY" constant="-75" id="wzd-c1-SbO"/>
                         </constraints>
                     </view>
                     <connections>
